@@ -17,4 +17,12 @@ router.post("/users", function(req,res) {
 	});
 });
 
+router.get("/users/:id", function(req,res){
+	var id = req.params.id;
+	db.users.find({ _id: mongojs.ObjectId(id)}, function(err,user){
+		if(user) res.status(200).json(user);
+		else res.sendStatus(404);
+	});
+});
+
 module.exports = router;
