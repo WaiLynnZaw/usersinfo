@@ -5,7 +5,7 @@
     "body-parser": "1.15.0",
     "mongojs": "~2.2.1"
   },
-  // "engines": {
-  //   "node": ">=0.10.25"
-  // }
+  "engines": {
+    "node": ">=0.10.25"
+  }
 }
