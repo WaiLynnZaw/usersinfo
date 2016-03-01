@@ -1,11 +1,11 @@
 {
   "private": true,
   "dependencies": {
-    "express": "4.x",
+    "express": "4.13.4",
     "body-parser": "1.15.0",
-    "mongojs": "~2.2.1"
+    "mongojs": "2.2.1"
   },
   "engines": {
-    "node": ">=0.10.25"
+    "node": "0.12.2"
   }
 }
