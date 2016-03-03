@@ -2,8 +2,8 @@ var express = require("express");
 var mongojs = require("mongojs");
 var router = express.Router();
 
-var db = mongojs('mydb',['users']);
-// var db = mongojs('mongodb://wlz:root@ds019038.mlab.com:19038/myusersdb',['users']);
+// var db = mongojs('mydb',['users']);
+var db = mongojs('mongodb://wlz:root@ds019038.mlab.com:19038/myusersdb',['users']);
 
 router.get("/users", function(req,res) {
 	db.users.find(function(err,users){
